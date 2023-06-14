@@ -17,7 +17,7 @@ soluzione: SELECT * FROM `courses` WHERE `period` = 'I SEMESTRE' AND `year` = '1
 soluzione: SELECT * FROM `exams` WHERE `date` = '2020/06/20' AND `hour` > '14:00:00';
 
 6. Selezionare tutti i corsi di laurea magistrale (38)
-soluzione:
+soluzione:SELECT * FROM `degrees` WHERE `level` = 'MAGISTRALE';
 
 7. Da quanti dipartimenti è composta l'università? (12)
 soluzione:
