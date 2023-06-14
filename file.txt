@@ -20,7 +20,7 @@ soluzione: SELECT * FROM `exams` WHERE `date` = '2020/06/20' AND `hour` > '14:00
 soluzione:SELECT * FROM `degrees` WHERE `level` = 'MAGISTRALE';
 
 7. Da quanti dipartimenti è composta l'università? (12)
-soluzione:SELECT `ID` FROM `departments`;
+soluzione:SELECT COUNT(`id`) AS 'departmenti' FROM `departments`;
 
 8. Quanti sono gli insegnanti che non hanno un numero di telefono? (50)
 soluzione: SELECT `PHONE` FROM `teachers` WHERE `phone` IS NULL;
