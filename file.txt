@@ -23,4 +23,4 @@ soluzione:SELECT * FROM `degrees` WHERE `level` = 'MAGISTRALE';
 soluzione:SELECT `ID` FROM `departments`;
 
 8. Quanti sono gli insegnanti che non hanno un numero di telefono? (50)
-soluzione:
+soluzione: SELECT `PHONE` FROM `teachers` WHERE `phone` IS NULL;
