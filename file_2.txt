@@ -2,7 +2,7 @@
 soluzioni: SELECT COUNT(id) AS 'NUMERO_ISCRITTI', YEAR(`enrolment_date`) FROM `students` GROUP BY YEAR(`enrolment_date`);
 
 2. Contare gli insegnanti che hanno l'ufficio nello stesso edificio
-soluzioni:
+soluzioni: SELECT teachers.office_address AS 'indirizzo', COUNT(`teachers`.`office_address`) AS 'numero_docenti' FROM `teachers`GROUP BY indirizzo;
 
 3. Calcolare la media dei voti di ogni appello d'esame
 soluzioni:
