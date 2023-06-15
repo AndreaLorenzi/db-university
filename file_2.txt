@@ -5,7 +5,7 @@ soluzioni: SELECT COUNT(id) AS 'NUMERO_ISCRITTI', YEAR(`enrolment_date`) FROM `s
 soluzioni: SELECT teachers.office_address AS 'indirizzo', COUNT(`teachers`.`office_address`) AS 'numero_docenti' FROM `teachers`GROUP BY indirizzo;
 
 3. Calcolare la media dei voti di ogni appello d'esame
-soluzioni:
+soluzioni: SELECT `exam_id`, AVG(`vote`) FROM `exam_student` GROUP BY `exam_id`;
 
 4. Contare quanti corsi di laurea ci sono per ogni dipartimento
 soluzioni:
